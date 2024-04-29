@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All about Tea</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" type="x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header>
+<h1>All About Tea</h1>
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Harvesting.html">Harvesting</a></li>
+    <li><a href="Processing.html">Processing</a></li>
+    <li><a href="Brewing.html">Brewing</a></li>
+    <li><a href="Types of Tea.html">Types of Tea</a></li>
+    <li><a href="Tea Survey.html">Tea Survey</a></li>
+</ul>
+</nav>
+</header>
+
+<h1 class="title-hover">Types of Tea</h1>
+
+<div class="table-responsive">
+<table id="table"> 
+<tr>
+<th>Drink</th>
+<th>Preparation</th>
+<th>Temperature</th>
+<th>Ingredients</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>Green Tea Latte</td>
+<td>Matcha Powder</td>
+<td>Hot</td>
+<td>Matcha powder, steamed milk, and sweetener (optional)</td>
+<td>Mix matcha powder with hot water, then add steamed milk and sweetener (if desired)</td>
+</tr>
+<tr>
+<td>Chai Latte</td>
+<td>Chai Concentrate</td>
+<td>Hot</td>
+<td>Chai concentrate, steamed milk</td>
+<td>Mix chai concentrate with steamed milk</td>
+</tr>
+<tr>
+<td>Herbal Iced Tea</td>
+<td>Infusion</td>
+<td>Cold</td>
+<td>Herbal tea bags, cold water, sweetener (optional)</td>
+<td>Steep herbal tea bags in cold water, add sweetener if desired, and serve over ice</td>
+</tr>
+<tr>
+<td>Bubble Tea</td>
+<td>Milk Tea</td>
+<td>Cold</td>
+<td>Tea base, milk, tapioca pearls, sweetener</td>
+<td>Shake together tea base, milk, and sweetener, add tapioca pearls, and serve with a wide straw</td>
+</tr>
+<tr>
+<td>Earl Grey Latte</td>
+<td>Earl Grey Tea</td>
+<td>Hot</td>
+<td>Earl Grey tea, steamed milk</td>
+<td>Steep Earl Grey tea, add steamed milk, and optionally sweeten to taste</td>
+</tr>
+<tr>
+<td>Thai Iced Tea</td>
+<td>Thai Tea Mix</td>
+<td>Cold</td>
+<td>Thai tea mix, water, condensed milk, sweetener (optional)</td>
+<td>Brew Thai tea mix, sweeten with condensed milk and/or sweetener, and serve over ice</td>
+</tr>
+</table>
+</div>
+
+<div class="slideshow-container">
+    <div class="mySlides">
+        <img src="Green Tea latte.jpg" style="width:100% ; border-radius: 20px;">
+        <div class="slide-caption">Green Tea Latte</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="CHAI-LATTE.png" style="width:100% ; border-radius: 20px;">
+        <div class="slide-caption">Chai Latte</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="Ice Tea.jpeg" style="width:100% ; border-radius: 20px;">
+        <div class="slide-caption">Herbal Iced Tea</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="bubble-tea.jpeg" style="width:100% ; border-radius: 20px;">
+        <div class="slide-caption">Bubble Tea</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="Earl grey tea.jpeg" style="width:100% ; border-radius: 20px;">
+        <div class="slide-caption">Earl Grey Latte</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="thai ice tea.jpeg" style="width:100% ; border-radius: 20px;">
+        <div class="slide-caption">Thai Iced Tea</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<footer>
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Harvesting.html">Harvesting</a></li>
+    <li><a href="Processing.html">Processing</a></li>
+    <li><a href="Brewing.html">Brewing</a></li>
+    <li><a href="Types of Tea.html">Types of Tea</a></li>
+    <li><a href="Tea Survey.html">Tea Survey</a></li>
+</ul>
+</nav>
+
+<p>Copyright &copy; 2024 All About Tea - Developed & Designed By <b>Aadhil AR</b></p>
+
+</footer>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 2000);
+    }
+</script>
+
+</body>
+</html>

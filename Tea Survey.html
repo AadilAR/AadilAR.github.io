@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> All about Tea </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="x-icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header>
+<h1>All About Tea</h1>
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Harvesting.html">Harvesting</a></li>
+    <li><a href="Processing.html">Processing</a></li>
+    <li><a href="Brewing.html">Brewing</a></li>
+    <li><a href="Types of Tea.html">Types of Tea</a></li>
+    <li><a href="Tea Survey.html">Tea Survey</a></li>
+</ul>
+</nav>
+</header>
+
+<h1 class="title-hover">Tea Survey</h1>
+<aside>
+<figure>
+<img src="tea cup.jpeg" alt="a cup of tea" style="height: 100px;">
+</figure>
+</aside>
+<form id="surveyForm" action="tea-survey.php" method="post" onsubmit="return validateForm()">
+  <fieldset>
+  <legend>Personal Information</legend>
+  Your Name<br>
+  <input type="text" name="name" required size="40"/><br>
+  Email Address<br>
+  <input type="email" name="email" required placeholder="enter a valid email address" size="40"/><br>
+  </fieldset>
+  <fieldset>
+  <legend>Your Tea Preferences</legend>
+  Tell us your tea preparation methods.<br>
+  <textarea name="preparation" cols="40" rows="6"></textarea>
+  <br><br>
+  Do you grind your own tea leaves?<br>
+  <input type="radio" name="grind" value="yes"> yes<br>
+  <input type="radio" name="grind" value="no">no<br>
+  <br>
+  How do you drink your tea?<br>
+  <input type="checkbox" name="drink" value="sugar">with sugar<br>
+  <input type="checkbox" name="drink" value="milk">with milk<br>
+  <br>
+  What is your favorite tea drink?<br><br>
+  <select name="favorite" required>
+  <option value="">please select a drink</option>
+  <option value="green">Green Tea Latte</option>
+  <option value="black">Chai Latte</option>
+  <option value="herbal">Herbal Iced Tea</option>
+  <option value="chai">Bubble Tea</option>
+  <option value="bubble">Earl Grey Latte</option>
+  <option value="bubble">Thai Iced Tea</option>
+  </select>
+  </fieldset>
+  
+  <input class="submission-button" id="submitButton" type="submit" value="Submit Survey">
+  </form>
+  
+
+
+<footer>
+<nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Harvesting.html">Harvesting</a></li>
+    <li><a href="Processing.html">Processing</a></li>
+    <li><a href="Brewing.html">Brewing</a></li>
+    <li><a href="Types of Tea.html">Types of Tea</a></li>
+    <li><a href="Tea Survey.html">Tea Survey</a></li>
+</ul>
+</nav>
+
+<p>Copyright &copy; 2024 All About Tea - Developed & Designed By <b>Aadhil AR</b></p>
+
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('surveyForm');
+      var submitButton = document.getElementById('submitButton');
+      
+      form.addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+          
+          alert('Thank you for your submission!');
+          
+
+  });
+  </script>
+  
+
+
+
+</body>
+</html>

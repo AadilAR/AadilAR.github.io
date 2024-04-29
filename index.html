@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> All about Tea </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" type="x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+<link href="styles.css" rel = "stylesheet" type = "text/css" />
+</head>
+<body>
+<header>
+<h1>All About Tea</h1>
+<nav>
+<ul>
+    <li><a href = "index.html">Home</a></li>
+    <li><a href = "Harvesting.html">Harvesting</a></li>
+    <li><a href = "Processing.html">Processing</a></li>
+    <li><a href = "Brewing.html">Brewing</a></li>
+    <li><a href = "Types of Tea.html">Types of Tea</a></li>
+    <li><a href = "Tea Survey.html">Tea Survey</a></li>
+</ul>
+</nav>
+</header>
+
+<h1>All About Tea</h1>
+<aside>
+<blockquote>We want to do a lot of stuff; we're not in great shape. We didn't get a good night's sleep.
+ We're a little depressed. Tea solves all these problems in one delightful little cup.</blockquote>
+- Anonymous</aside>
+<section>
+<img class="photo-left" src="tea cup.jpeg" alt="a cup of tea" width="128" height="128" />
+<p>Tea preparation is the process of turning tea leaves into a beverage. 
+While the particular steps vary with the type of tea and with the raw materials, 
+the process generally includes several steps: tea leaves are harvested, processed, and then brewed to extract flavors.</p>
+
+<p>Tea can be brewed using various methods such as steeping, boiling, or cold brewing.
+ In most areas, tea may be purchased as loose leaves, in tea bags, or as pre-packaged tea blends.
+ Tea is often packaged to ensure freshness and flavor preservation.</p>
+
+<p>To learn more about tea, just browse our informative site, or you can visit </p>
+http://en.wikipedia.org/wiki/Tea_preparation Wikipedia for even more information on different types of tea and brewing techniques.
+</section>
+
+<button class="randomclk" onclick="displayRandomTeaFact()">Show Random Tea Fact</button>
+
+<section>
+<footer>
+<nav>
+<ul>
+    <li><a href = "index.html">Home</a></li>
+    <li><a href = "Harvesting.html">Harvesting</a></li>
+    <li><a href = "Processing.html">Processing</a></li>
+    <li><a href = "Brewing.html">Brewing</a></li>
+    <li><a href = "Types of Tea.html">Types of Tea</a></li>
+    <li><a href = "Tea Survey.html">Tea Survey</a></li>
+</ul>
+</nav>
+
+<p>Copyright &copy; 2024 All About Tea - Developed & Designed By <b>Aadhil AR</b></p>
+
+</footer>
+</section>
+<script>
+    
+    function displayRandomTeaFact() {
+       
+        var teaFacts = [
+            "Tea is the most widely consumed beverage in the world, after water.",
+            "The tea plant, Camellia sinensis, is native to East Asia.",
+            "There are four main types of tea: black, green, white, and oolong.",
+            "Tea can be a natural source of caffeine, but the caffeine content varies depending on the type of tea and how it's brewed.",
+            "Herbal teas, also known as tisanes, are not made from the tea plant but from various herbs, flowers, and spices."
+        ];
+    
+        
+        var randomIndex = Math.floor(Math.random() * teaFacts.length);
+    
+        
+        alert(teaFacts[randomIndex]);
+    }
+</script>
+</body>
+</html>

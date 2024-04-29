@@ -1,0 +1,244 @@
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0 auto;
+    width: 960px;
+    background-color:rgb(18, 43, 1);
+    color: bisque;
+    background-image: url(Harvesting.jpg);
+}
+
+
+h1, h2, h3 {
+    color: rgb(220, 255, 123);
+
+}
+
+/*ul {
+    
+
+}*/
+
+a:link, a:visited {
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+a:hover {
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a:link, nav a:visited {
+    background-color: bisque;
+    color: rgb(74, 48, 6);
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 3em;
+}
+
+.link{
+    color: brown;
+}
+
+nav a:hover {
+    background-color: black;
+}
+
+aside {
+    width: 210px;
+    float: right;
+    background-color: tan;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    margin-left: 20px;
+   
+}
+
+.photo-left {
+    float: left;
+    margin-right: 20px;
+
+}
+
+.photo-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.Tea-Plantation {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header {
+    background-image: url("home.png");
+    height: 180px;
+    margin-bottom: 70px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    margin-bottom: 2em;
+    
+  
+}
+
+
+header h1 {
+    color: rgba(256, 256, 256, .8);
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+footer {
+    margin: 70px 0;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+footer nav a:link,
+footer nav a:visited {
+    color: rgb(74, 48, 6);
+    text-decoration: none;
+    display: block;
+    width: 160px;
+    text-align: center;
+    background-color: bisque;
+}
+
+footer nav a:hover {
+    color: black;
+}
+
+#table {
+    background-color: rgb(18, 43, 1);
+
+}
+
+td,
+th {
+    border: 1px solid black;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+}
+th {
+    background-color: bisque;
+    color: rgb(18, 43, 1);
+}
+
+#img-boader{
+    border: 2px solid rgb(220, 255, 123);
+}
+
+
+
+
+.slideshow-container {
+        position: relative;
+        max-width: 800px;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .slide-caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+
+
+  
+  .title-hover {
+    color: rgb(220, 255, 123);
+  }
+  .title-hover:hover {
+    color: rgb(91, 64, 6);
+  }
+
+
+  .submission-button {
+    color: brown;
+    background-color: bisque;
+  }
+
+  .randomclk {
+
+    color: blanchedalmond;
+    background-color: rgb(1, 57, 46);
+    border-radius: 5px;
+  }
+
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        height: 150px;
+        background-size: cover;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        margin-top: 1em;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slide-caption {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+   
+
+    
+}
+
+
